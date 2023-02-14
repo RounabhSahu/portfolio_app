@@ -1,0 +1,33 @@
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+.box{
+    @apply bg-teal-100;
+    border:0 solid black;
+    /*scale:20%;*/
+    border-radius: 50%;
+    /*color:rgb(255,255,255,.5);*/
+
+    animation: ani 1s running infinite;
+}
+@keyframes ani{
+    0%{
+        opacity: 0;
+    }
+    25%{
+
+        opacity: 25%;
+    }
+    50%{
+
+        opacity: 50%;
+    }
+    75%{
+
+        opacity: 25%;
+    }
+    100%{
+
+        opacity: 0;
+    }
+}
