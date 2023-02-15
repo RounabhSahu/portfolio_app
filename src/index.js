@@ -7,9 +7,12 @@ import {HashRouter as Router} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Router>
-          <App />
-      </Router>
+      <div className="p-0 m-0 bg-transparent">
+          <Router>
+              <App />
+          </Router>
+      </div>
+
 
   </React.StrictMode>
 );

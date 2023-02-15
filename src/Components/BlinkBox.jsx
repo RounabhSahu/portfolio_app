@@ -68,9 +68,12 @@ const MyComponent = (props) => {
     }, [flag2]);
 
     return (
-        <div className="m-0 p-0 w-full h-screen bg-black p-0 absolute -z-10 overflow-hidden" id="hel" style={{"display":"grid","gridTemplateColumns":"repeat("+(gr)+",1fr)"}}>
+        <div
+            className="m-0 p-0 w-full h-screen bg-black p-0 absolute -z-10 overflow-hidden"
+            id="hel"
+            style={{"display": "grid", "gridTemplateColumns": "repeat(" + (gr) + ",1fr)"}}>
 
-            {flag2 && l.map((item)=> <Box key={item} pid={item} sty={sty} fl={false}></Box>)}
+            {flag2 && l.map((item) => <Box key={item} pid={item} sty={sty} fl={false}></Box>)}
 
         </div>
     );
